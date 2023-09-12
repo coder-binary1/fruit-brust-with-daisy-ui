@@ -15,6 +15,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- custom tailwind -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'color-primary': '#F85559',
+                    }
+                }
+            }
+        }
+    </script>
     <!-- custom style -->
     <style>
         .font-lato {
@@ -24,8 +36,79 @@
 </head>
 
 <body>
-    <header></header>
-    <main></main>
+    <header class="md:container md:mx-auto lg:mt-12">
+        <!-- nav section -->
+        <nav class="md:container md:mx-auto">
+            <div class="navbar md:bg-color-primary rounded-full justify-between">
+                <div class="navbar-center hidden lg:flex flex-1">
+                    <ul class="menu menu-horizontal px-1 text-base">
+                        <li><a>Home</a></li>
+                        <li><a>About Us</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>All Fruits</a></li>
+                    </ul>
+                </div>
+
+                <div class="flex flex-row-reverse justify-between flex-1">
+                    <div class="dropdown ">
+                        <label tabindex="0" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </label>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-red-100 rounded-box w-52 text-base right-0">
+                            <li><a>Home</a></li>
+                            <li><a>About Us</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>All Fruits</a></li>
+                            <li>
+                                <div class="form-control rounded-full relative ">
+                                    <input type="text" placeholder="Search"
+                                        class="h-8 pl-2 pr-4 text-base rounded-full bg-white input-bordered w-44 md:w-auto"
+                                        required />
+
+                                    <div class="absolute inset-y-0 right-5 flex items-center pointer-events-none">
+                                        <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                            xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                            <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                                stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                                        </svg>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                    <div class="flex items-center">
+                        <img src="images/logo.png" alt="">
+                        <h2 class="text-4xl ml-4 font-bold">Fruit Burst</h2>
+                    </div>
+                </div>
+                <div class="hidden lg:block">
+                    <!-- <ul class="menu menu-horizontal px-1 text-base"> -->
+                    <div class="form-control rounded-full relative px-1 text-base">
+                        <input type="text" placeholder="Search"
+                            class="h-12 pl-4 pr-4 text-base rounded-full mr-2 bg-white input-bordered w-24 md:w-auto"
+                            required />
+
+                        <div class="absolute inset-y-0 right-5 flex items-center pl-3 pointer-events-none">
+                            <svg class="w-4 h-4 text-gray-500 dark:text-gray-400" aria-hidden="true"
+                                xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 20 20">
+                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"
+                                    stroke-width="2" d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z" />
+                            </svg>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </nav>
+    </header>
+    <main class="container">
+    </main>
     <footer></footer>
 </body>
 
