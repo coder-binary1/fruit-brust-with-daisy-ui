@@ -15,6 +15,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700;900&display=swap" rel="stylesheet">
 
+    <!-- font awesome cdn -->
+    <script src="https://kit.fontawesome.com/94d006789c.js" crossorigin="anonymous"></script>
+
     <!-- custom tailwind -->
     <script>
         tailwind.config = {
@@ -272,9 +275,9 @@
                     <p class="font-medium text-color-secondary-60 my-6">Apples</p>
                     <div class="rating gap-2 mb-8">
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
+                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" checked />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
-                        <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
                         <input type="radio" name="rating-2" class="mask mask-star-2 bg-color-primary" />
                     </div>
                     <p>Details</p>
@@ -311,7 +314,7 @@
                 </div>
                 <!-- fourth item -->
                 <div class="flex flex-col items-center border-2 p-12 border-color-secondary-60 rounded-md">
-                    <img src="images/fruit8.png" alt="">
+                    <img src="images/fruit9.png" alt="">
                     <h4 class="text-color-secondary text-2xl font-bold mt-12 mb-6">12.90$ - 18.85$</h4>
                     <hr class="w-5/6">
                     <p class="font-medium text-color-secondary-60 my-6">Banana</p>
@@ -324,14 +327,100 @@
                     </div>
                     <p>Details</p>
                 </div>
+            </div>
 
+            <div class="flex justify-center mt-12">
+                <button class="btn bg-color-primary text-white ">Shop All</button>
+            </div>
+        </section>
 
+        <!-- met the team section -->
+        <section class="text-white text-center mt-32 rounded-lg bg-cover bg-[url('./images/team.png')] bg-no-repeat">
+            <div class="backdrop-brightness-50 py-28 rounded-lg">
+                <h3 class=" text-5xl font-extrabold">Meet the team section</h3>
+                <p class="font-medium mt-6 w-3/6 mx-auto">Contrary to popular belief, is not simply random text. It has
+                    roots in a
+                    piece
+                    of
+                    classical Latin literature from 45 BC, making it over 2000 years old.</p>
 
+                <!-- members section -->
+                <div class="mt-12 grid gap-24 grid-cols-1 md:grid-cols-2 lg:grid-cols-4 lg:mx-8">
+                    <!-- member-1 -->
+                    <div class="flex flex-col items-center">
+                        <img src="images/member1.png" alt="">
+                        <h4 class="text-2xl font-bold mt-8 mb-2">Awlad Hossain</h4>
+                        <p>Fruits Expert</p>
+                        <!-- member social link -->
+                        <div class="text-lg mt-4">
+                            <i class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-twitter mx-4 bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-linkedin bg-color-primary p-2 rounded-full"></i>
+                        </div>
+                    </div>
+                    <!-- member-2 -->
+                    <div class="flex flex-col items-center">
+                        <img src="images/member2.png" alt="">
+                        <h4 class="text-2xl font-bold mt-8 mb-2">Safia Chowdhury</h4>
+                        <p>Fruits Inspector</p>
+                        <!-- member social link -->
+                        <div class="text-lg mt-4">
+                            <i class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-twitter mx-4 bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-linkedin bg-color-primary p-2 rounded-full"></i>
+                        </div>
+                    </div>
+                    <!-- member-3 -->
+                    <div class="flex flex-col items-center">
+                        <img src="images/member3.png" alt="">
+                        <h4 class="text-2xl font-bold mt-8 mb-2">Rokib Hossain</h4>
+                        <p>Fruits Analyst</p>
+                        <!-- member social link -->
+                        <div class="text-lg mt-4">
+                            <i class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-twitter mx-4 bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-linkedin bg-color-primary p-2 rounded-full"></i>
+                        </div>
+                    </div>
+                    <!-- member-4 -->
+                    <div class="flex flex-col items-center">
+                        <img src="images/member4.png" alt="">
+                        <h4 class="text-2xl font-bold mt-8 mb-2">Chaity</h4>
+                        <p>Fruits Supplier</p>
+                        <!-- member social link -->
+                        <div class="text-lg mt-4">
+                            <i class="fa-brands fa-facebook bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-twitter mx-4 bg-color-primary p-2 rounded-full"></i>
+                            <i class="fa-brands fa-linkedin bg-color-primary p-2 rounded-full"></i>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
     </main>
-    <footer class="">
-
+    <footer class="bg-black flex flex-col items-center py-36 mt-32">
+        <div class="flex items-center">
+            <img src="images/logo.png" alt="">
+            <h3 class="text-4xl ml-4 font-bold">Fruit Burst</h3>
+        </div>
+        <div class="my-12">
+            <ul class="flex gap-8 md:gap-12 lg:gap-14 text-lg items-center justify-center flex-wrap">
+                <li><a href="#"></a>Home</li>
+                <li><a href="#"></a>About Us</li>
+                <li><a href="#"></a>Shop</li>
+                <li><a href="#"></a>All Fruits</li>
+                <li><a href="#"></a>Support</li>
+                <li><a href="#"></a>My Account</li>
+            </ul>
+        </div>
+        <div>
+            <ul class="flex gap-14 text-4xl items-center justify-center>
+                <li><a href=" #"></a><i class="fa-brands fa-facebook"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-twitter"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-apple"></i></li>
+                <li><a href="#"></a><i class="fa-brands fa-youtube"></i></li>
+            </ul>
+        </div>
     </footer>
 </body>
 
